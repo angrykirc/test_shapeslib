@@ -40,7 +40,6 @@ namespace ShapesLib
 
         public bool IsRightTriangle()
         {
-            //if (A == B || B == C || C == B || C == A) return true;
             const double eps = 0.2D;
             if (Math.Abs(A * A + B * B - C * C) < eps)
                 return true;
@@ -54,7 +53,7 @@ namespace ShapesLib
 
         public string DebugInfo()
         {
-            return String.Format("Triangle. Sides: A={0} B={1} C={2} Valid: {3} IsRightTriangle: {4}", A, B, C, IsValid(), IsRightTriangle());
+            return $"Triangle. Sides: A={A} B={B} C={C} Valid: {IsValid()} RightTriangle: {IsRightTriangle()}";
         }
     }
 }

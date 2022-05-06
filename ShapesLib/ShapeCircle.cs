@@ -30,7 +30,7 @@ namespace ShapesLib
 
         public string DebugInfo()
         {
-            return String.Format("Circle. Radius: {0} Valid: {1}", Radius, IsValid());
+            return $"Circle. Radius: {Radius} Valid: {IsValid()}";
         }
     
     }
